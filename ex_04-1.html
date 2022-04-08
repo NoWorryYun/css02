@@ -6,19 +6,30 @@
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
 		<style>
-        	table {
-        		border-top: 1px;
-        		border-bottom: 1px;
-        		border-left: 0px;
-        		border-right: 0px;
-        		border-style: solid;
-        		border-collapse: collapse;
-        	}
-        	
-        	
+			table{
+				border: none;
+				border-collapse: collapse;
+				text-align: center;
+			}
         	table>thead>tr {
 				background-color: #808080;
 			}
+			table>tbody>tr:hover {
+				background-color: #ffff00;
+				
+			}			
+			
+			.line-head{
+				border-bottom: 1px solid #000000;
+				border-top: 1px solid #000000;
+			}
+			.line-bottom{
+				border-bottom: 1px solid #000000;
+			}			
+			.dot-bottom{
+				border-bottom: 1px dotted #000000;
+			}
+
 		</style>
     </head>
 
@@ -29,8 +40,16 @@
 			<h4>리스트</h4>
 			
 		<table>
+			<colgroup>
+				<col width="50px">
+				<col width="350px">
+				<col width="70px">
+				<col width="70px">
+				<col width="70px">
+				<col width="70px">
+			</colgroup>
 			<thead>
-				<tr>
+				<tr class="line-head">
 					<th>번호</th>
 					<th>제목</th>
 					<th>글쓴이</th>
@@ -40,41 +59,41 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="dot-bottom">
 					<td>123</td>				
-					<td>게시판 게시글입니다.</td>				
+					<td><a href="">게시판 게시글입니다.</a></td>				
 					<td>정우성</td>				
 					<td>1232</td>				
 					<td>dddddd</td>				
 					<td>삭제</td>				
 				</tr>
-				<tr>
+				<tr class="dot-bottom">
 					<td>123</td>				
-					<td>게시판 게시글입니다.</td>				
+					<td><a href="">게시판 게시글입니다.</a></td>					
 					<td>정우성</td>				
 					<td>1232</td>				
 					<td>dddddd</td>				
 					<td>삭제</td>				
 				</tr>
-				<tr>
+				<tr class="dot-bottom">
 					<td>123</td>				
-					<td>게시판 게시글입니다.</td>				
+					<td><a href="">게시판 게시글입니다.</a></td>					
 					<td>정우성</td>				
 					<td>1232</td>				
 					<td>dddddd</td>				
 					<td>삭제</td>				
 				</tr>
-				<tr>
+				<tr class="dot-bottom">
 					<td>123</td>				
-					<td>게시판 게시글입니다.</td>				
+					<td><a href="">게시판 게시글입니다.</a></td>					
 					<td>정우성</td>				
 					<td>1232</td>				
 					<td>dddddd</td>				
 					<td>삭제</td>				
 				</tr>
-				<tr>
+				<tr class="line-bottom">
 					<td>123</td>				
-					<td>게시판 게시글입니다.</td>				
+					<td><a href="">게시판 게시글입니다.</a></td>				
 					<td>정우성</td>				
 					<td>1232</td>				
 					<td>dddddd</td>				

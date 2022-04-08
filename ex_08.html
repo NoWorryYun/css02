@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+         	/* * { 								<*(모든태그를 영역) 잘 안씀 왠만하면 body, div, table, 등등 나열해서 사용>
+         		margin: 0px; 
+         		padding: 0px; 
+         	}  */
+         	
+         	body, div {
+         		margin: 0px;
+         		padding: 0px;
+         		border: 1px solid #000000;
+         	}
+        	.box-red {
+        	/* background-color: #ff0000; */
+        	border: 1px solid #000000;
+        	
+        	/* 							<상하좌우 다 쓰는 방법
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+        	padding-left: 20px;
+        	padding-right: 20px;
+        	margin: 10px; */
+        	
+        	/* padding: 10px; */
+        	/*padding: 10px 10px 10px 10px; 위 오른쪽 아래 왼쪽 순서*/
+        	
+        	padding: 10px 30px; /* 상하 / 좌우 순서 */
+        	
+        	margin-top: 10px;
+        	margin-left: 10px;
+        	margin-right: 10px;
+        	margin-bottom: 10px;
+        	/* margin: 10px; */
+        	display: inline-block;
+        	
+        	}
+        </style>
+        
+    </head>
+
+    <body>
+		<div class="box-red">
+			div태그
+		</div>
+    </body>
+
+</html>
